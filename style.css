@@ -10,7 +10,7 @@ ul li {
 
 ul li a {
     display: block;
-    padding: 20px 25px;
+    padding: 15px 25px;
     color: #FFF;
     text-decoration: none;
     text-align: center;
@@ -34,4 +34,71 @@ ul li a:hover {
 
 ul li:hover ul.dropdown {
     display: block;
+}
+
+header{
+    background-image: url(img/nemet_zaszlo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3%;
+}
+
+body{
+    background-color: rgb(17, 17, 17);
+}
+
+#szoveg{
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url(img/nemet_terkep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    color: white;
+    padding: 3% 2%;
+}
+#quizzek{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(img/nemet_zaszlo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-blend-mode: darken;
+    padding: 10%;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+#quiz1{
+    background-color: black;
+    color: white;
+    padding: 2% 7%;
+    border: 2px solid #313131;
+}
+
+#quiz2{
+    background-color: rgb(212, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 2% 2%;
+    border: 2px solid #830000;
+}
+
+#quiz3{
+    background-color: rgb(230, 195, 0);
+    color: rgb(0, 0, 0);
+    padding: 2% 2%;
+    border: 2px solid #a38500;
+}
+
+button{
+    display: block;
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+    color: white;
 }
