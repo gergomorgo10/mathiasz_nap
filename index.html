@@ -13,74 +13,74 @@
             <li>
                 <a href="">szöveg</a>
                 <ul class="dropdown">
-                    <li><a href="">Német</a></li>
-                    <li><a href="">Ausztria</a></li>
-                    <li><a href="">Svájc</a></li>
+                    <li><a href="#deutschland">Német</a></li>
+                    <li><a href="#Osterreich">Ausztria</a></li>
+                    <li><a href="#Schweiz">Svájc</a></li>
                 </ul>
             </li>
             <li>
                 <a href="">quiz</a>
                 <ul class="dropdown">
-                    <li><a href="">quiz 1</a></li>
-                    <li><a href="">quiz 2</a></li>
-                    <li><a href="">quiz 3</a></li>
+                    <li><a href="#quiz1">Deutschland quiz</a></li>
+                    <li><a href="#quiz2">Österreich quiz</a></li>
+                    <li><a href="#quiz3">Schweiz quiz</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
     <main>
         <section id="szoveg">
-            <h2>Deutschland</h2>
+            <h2 id="deutschland">Deutschland</h2>
             <p>Deutschland ist ein Bundesstaat in Mitteleuropa. Es besteht aus 16 Ländern. Im Rahmen der Wiedervereinigung Deutschlands wurde Berlin 1990 Bundeshauptstadt und 1991 zum Parlaments- und Regierungssitz bestimmt. Das Land grenzt an neun Nachbarstaaten und liegt in der gemäßigten Klimazone zwischen Nord- und Ostsee im Norden sowie Bodensee und Alpen im Süden. Deutschland hat insgesamt neun Nachbarstaaten: Im Norden grenzt Deutschland an Dänemark, im Nordosten an Polen, im Osten an Tschechien, im Südosten an Österreich, im Süden an die Schweiz, im Südwesten an Frankreich, im Westen an Luxemburg und an Belgien und im Nordwesten an die Niederlande. Die Grenzlänge beträgt insgesamt 3876 Kilometer. Deutschland hat circa 83,6 Millionen Einwohner und zählt bei einer Fläche von 357.588 Quadratkilometern. Die bevölkerungsreichste deutsche Stadt ist Berlin. In Deutschland sind etwa 48.000 Tierarten nachgewiesen. Deutschland ist weltweit für die Entwicklung und Produktion von innovativen und hochwertigen PKW bekannt. Heute sind Konzerne wie Volkswagen, Mercedes-Benz und BMW ein wichtiger Bestandteil der deutschen Wirtschaft. In Deutschland gibt es 145 Fernsehsender.<br><br></p>
-            <h2>Österreich</h2>
+            <h2 id="Osterreich">Österreich</h2>
             <p>Österreich  ist ein mitteleuropäischer Binnenstaat mit über 9,2 Millionen Einwohnern. Die angrenzenden Staaten sind Deutschland und Tschechien im Norden, die Slowakei und Ungarn im Osten, Slowenien und Italien im Süden sowie die Schweiz und Liechtenstein im Westen. Seit dem Jahre 1921 hat Österreich 9 Bundesländer: Vorarlberg, Tirol, Salzburg, Kärnten, Steiermark, Oberösterreich, Niederösterreich, Wien und das Burgenland. Das flächenmäßig größte Bundesland ist Niederösterreich, das einwohnerreichste Bundesland ist Wien. Das Bundesland Wien ist zugleich Bundeshauptstadt und auch einwohnerstärkste Stadt des Landes. Der höchste Berg des Landes ist der Großglockner. 43 % der Landesfläche sind bewaldet. Größere Banken in Österreich sind die Erste Group Bank AG, Raiffeisen Bank International AG, Unicredit Bank Austria sowie die BAWAG P.S.K. Österreich verfügt über eine moderne und leistungsfähige Industrie. Die österreichische Kultur ist vielschichtig geprägt; es gibt im Land zahlreiche Kulturdenkmale und zwölf UNESCO-Welterbestätten.<br><br></p>
-            <h2>Schweiz</h2>
+            <h2 id="Schweiz">Schweiz</h2>
             <p>Die Schweiz ist ein föderalistischer, demokratischer Staat in Mitteleuropa. Er grenzt im Norden an Deutschland, im Osten an Österreich und Liechtenstein, im Süden an Italien und im Westen an Frankreich. In der Schweiz leben 8.962.258 Menschen  auf 41.291 Quadrat­kilometern. Der Staat hat Anteil an drei grossen Sprachräumen. Deutsch, Französisch, Italienisch und Rätoromanisch sind die offiziellen Landessprachen der Schweiz. Die Schweizerische Eidgenossenschaft ist ein Bundesstaat, der aus sechsundzwanzig teilsouveränen Kantonen besteht. Sitz der Regierung und des Parlaments ist die Bundesstadt Bern. Die Landesgrenze der Schweiz hat eine Länge von total 1935 Kilometern. Geologisch wird die Schweiz in fünf Hauptregionen eingeteilt. Die Schweiz versteht sich als aussenpolitisch neutral. Die Schweizer Küche verbindet Einflüsse aus der deutschen, französischen und italienischen Küche. Sie ist regional sehr unterschiedlich.<br><br></p>
         </section>
         <section id="quizzek">
             <article id="quiz1">
-                <h2>quiz 1</h2>
+                <h2>Deutschland quiz</h2>
                 <form name="nemet">
                     <h4>1.	Wo liegt Deutschland?</h4>
-                    <label for="fpa">a.	In Südeuropa</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
-                    <label for="pfz">b.	In Asien</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
-                    <label for="fps">c.	In Mitteleuropa</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <label for="Südeuropa">a.	In Südeuropa</label>
+                    <input type="radio" name="nemet1" id="sudeuropa" value="0"><br>
+                    <label for="Asien">b.	In Asien</label>
+                    <input type="radio" name="nemet1" id="asien" value="0"><br>
+                    <label for="Mitteleuropa">c.	In Mitteleuropa</label>
+                    <input type="radio" name="nemet1" id="mitteleuropa" value="1"><br><br>
 
-                    <label for="zasz">2.	Aus wie vielen Bundesländern besteht Deutschland? : </label>
-                    <select name="zasz" id="zasz">
-                        <option value="1">12</option>
-                        <option value="2">16</option>
-                        <option value="3">9</option>
+                    <label for="nemet2">2.	Aus wie vielen Bundesländern besteht Deutschland? : </label>
+                    <select name="nemet2" id="bundeslandern">
+                        <option value="0">12</option>
+                        <option value="1">16</option>
+                        <option value="0">9</option>
                     </select><br><br>
 
                     <h4>3.	Welche Stadt ist die Bundeshauptstadt?</h4>
-                    <label for="fpa">a.	Berlin</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
-                    <label for="pfz">b.	München</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
-                    <label for="fps">c.	Köln</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <label for="berlin">a.	Berlin</label>
+                    <input type="radio" name="nemet3" id="berlin" value="1"><br>
+                    <label for="munchen">b.	München</label>
+                    <input type="radio" name="nemet3" id="munchen" value="0"><br>
+                    <label for="koln">c.	Köln</label>
+                    <input type="radio" name="nemet3" id="koln" value="0"><br><br>
 
-                    <label for="zasz">4.	Wann war die Wiedervereinigung Deutschlands? : </label>
-                    <select name="zasz" id="zasz">
-                        <option value="1">1989</option>
-                        <option value="2">1990</option>
-                        <option value="3">1991</option>
+                    <label for="nemet4">4.	Wann war die Wiedervereinigung Deutschlands? : </label>
+                    <select name="nemet4" id="Wiedervereinigung">
+                        <option value="0">1989</option>
+                        <option value="1">1990</option>
+                        <option value="0">1991</option>
                     </select><br><br>
 
                     <h4>5.	An wie vielen Nachbarstaaten grenzt Deutschland?</h4>
-                    <label for="fpa">a.	9</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
-                    <label for="pfz">b.	8</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
-                    <label for="fps">c.	10</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <label for="n5.9">a.	9</label>
+                    <input type="radio" name="nemet5" id="n5.9" value="1"><br>
+                    <label for="n5.8">b.	8</label>
+                    <input type="radio" name="nemet5" id="n5.8" value="0"><br>
+                    <label for="n5.10">c.	10</label>
+                    <input type="radio" name="nemet5" id="n5.10" value="0"><br><br>
 
-                    <label for="zasz">6.	Wie viele Einwohner hat das Land? : </label>
-                    <select name="zasz" id="zasz">
+                    <label for="nemet6">6.	Wie viele Einwohner hat das Land? : </label>
+                    <select name="nemet6" id="zasz">
                         <option value="1">83,6 Millionen</option>
                         <option value="2">86,3 Millionen</option>
                         <option value="3">68,3 Millionen</option>
@@ -88,14 +88,14 @@
 
                     <h4>7.	Welche Stadt ist die bevölkerungsreichste Stadt?</h4>
                     <label for="fpa">a.	Dresden</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
+                    <input type="radio" name="nemet7" id="fpa"><br>
                     <label for="pfz">b.	München</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
+                    <input type="radio" name="nemet7" id="pfz"><br>
                     <label for="fps">c.	Berlin</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <input type="radio" name="nemet7" id="fps"><br><br>
 
-                    <label for="zasz">8.	Wie viele Tierarten hat das Land? : </label>
-                    <select name="zasz" id="zasz">
+                    <label for="nemet8">8.	Wie viele Tierarten hat das Land? : </label>
+                    <select name="nemet8" id="zasz">
                         <option value="1">vierundachtzigtausend</option>
                         <option value="2">achtundvierzigtausend</option>
                         <option value="3">vierundvierzigtausend</option>
@@ -103,14 +103,14 @@
 
                     <h4>9.	Welcher Konzern exstiert nicht in Deutschland?</h4>
                     <label for="fpa">a.	BMW</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
+                    <input type="radio" name="nemet9" id="fpa"><br>
                     <label for="pfz">b.	Audi</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
+                    <input type="radio" name="nemet9" id="pfz"><br>
                     <label for="fps">c.	Mercedes</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <input type="radio" name="nemet9" id="fps"><br><br>
 
-                    <label for="zasz">10.	Welche Farben hat die deutsche Flagge? : </label>
-                    <select name="zasz" id="zasz">
+                    <label for="nemet10">10.	Welche Farben hat die deutsche Flagge? : </label>
+                    <select name="nemet10" id="zasz">
                         <option value="1">a.	schwarz – rot – orange</option>
                         <option value="2">b.	schwarz – rot – gelb</option>
                         <option value="3">c.	schwarz – rot – gold</option>
@@ -121,18 +121,18 @@
                 </form>
             </article>
             <article id="quiz2">
-                <h2>quiz 2</h2>
+                <h2>Österreich quiz</h2>
                 <form name="ausztria">
                     <h4>1.	Wo liegt Österreich?</h4>
                     <label for="fpa">a.	in Nordeuropa</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
+                    <input type="radio" name="ausztria1" id="fpa"><br>
                     <label for="pfz">b.	in Mitteleuropa</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
+                    <input type="radio" name="ausztria1" id="pfz"><br>
                     <label for="fps">c.	in Südeuropa</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <input type="radio" name="ausztria1" id="fps"><br><br>
 
-                    <label for="zasz">2.	Wie viele Grenzstaaten hat das Land? : </label>
-                    <select name="zasz" id="zasz">
+                    <label for="ausztria2">2.	Wie viele Grenzstaaten hat das Land? : </label>
+                    <select name="ausztria2" id="zasz">
                         <option value="1">8</option>
                         <option value="2">9</option>
                         <option value="3">7</option>
@@ -140,14 +140,14 @@
 
                     <h4>3.	Wie viele Bundesländer hat Österreich?</h4>
                     <label for="fpa">a.	7</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
+                    <input type="radio" name="ausztria3" id="fpa"><br>
                     <label for="pfz">b.	8</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
+                    <input type="radio" name="ausztria3" id="pfz"><br>
                     <label for="fps">c.	9</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <input type="radio" name="ausztria3" id="fps"><br><br>
 
-                    <label for="zasz">4.	Welche Stadt ist die Hauptstadt? : </label>
-                    <select name="zasz" id="zasz">
+                    <label for="ausztria4">4.	Welche Stadt ist die Hauptstadt? : </label>
+                    <select name="ausztria4" id="zasz">
                         <option value="1">Graz</option>
                         <option value="2">Wien</option>
                         <option value="3">Innsbruck</option>
@@ -155,29 +155,29 @@
 
                     <h4>5.	Wie heisst der höchste Berg?</h4>
                     <label for="fpa">a.	Grossglockner</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
+                    <input type="radio" name="ausztria5" id="fpa"><br>
                     <label for="pfz">b.	Grosslockner</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
+                    <input type="radio" name="ausztria5" id="pfz"><br>
                     <label for="fps">c.	Grossglokker</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <input type="radio" name="ausztria5" id="fps"><br><br>
 
                     <p>Eredmény : </p>
                     <button type="button">Küldés</button>
                 </form>
             </article>
             <article id="quiz3">
-                <h2>quiz 3</h2>
+                <h2>Schweiz quiz</h2>
                 <form name="svajc">
                     <h4>1.	Wie viele Nachbarstaaten hat die Schweiz?</h4>
                     <label for="fpa">a.	6</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
+                    <input type="radio" name="svájc1" id="fpa"><br>
                     <label for="pfz">b.	5</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
+                    <input type="radio" name="svájc1" id="pfz"><br>
                     <label for="fps">c.	7</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <input type="radio" name="svájc1" id="fps"><br><br>
 
-                    <label for="zasz">2.	An wie vielen grossen Sprachräumen hat Anteil der Staat? : </label>
-                    <select name="zasz" id="zasz">
+                    <label for="svájc2">2.	An wie vielen grossen Sprachräumen hat Anteil der Staat? : </label>
+                    <select name="svájc2" id="zasz">
                         <option value="1">4</option>
                         <option value="2">3</option>
                         <option value="3">5</option>
@@ -185,14 +185,14 @@
 
                     <h4>3.	Wie viele Landessprachen hat die Schweiz?</h4>
                     <label for="fpa">a.	5</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
+                    <input type="radio" name="svájc3" id="fpa"><br>
                     <label for="pfz">b.	4</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
+                    <input type="radio" name="svájc3" id="pfz"><br>
                     <label for="fps">c.	3</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <input type="radio" name="svájc3" id="fps"><br><br>
 
-                    <label for="zasz">4.	Aus wie vielen Kantonen besteht das Land? : </label>
-                    <select name="zasz" id="zasz">
+                    <label for="svájc4">4.	Aus wie vielen Kantonen besteht das Land? : </label>
+                    <select name="svájc4" id="zasz">
                         <option value="1">25</option>
                         <option value="2">24</option>
                         <option value="3">26</option>
@@ -200,11 +200,11 @@
 
                     <h4>5.	Wo ist die Sitz der Regierung?</h4>
                     <label for="fpa">a.	in Genf</label>
-                    <input type="radio" name="zaszlo" id="fpa"><br>
+                    <input type="radio" name="svájc5" id="fpa"><br>
                     <label for="pfz">b.	in Zürich</label>
-                    <input type="radio" name="zaszlo" id="pfz"><br>
+                    <input type="radio" name="svájc5" id="pfz"><br>
                     <label for="fps">c.	in Bern</label>
-                    <input type="radio" name="zaszlo" id="fps"><br><br>
+                    <input type="radio" name="svájc5" id="fps"><br><br>
 
                     <p>Eredmény : </p>
                     <button type="button">Küldés</button>
