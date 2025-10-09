@@ -1,104 +1,358 @@
-ul {
-    list-style: none;
-    background: #1b1b1b;
+body {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
 }
 
-ul li {
-    display: inline-block;
-    position: relative;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #000, #dd0000, #ffcc00);
+  padding: 1rem 2rem;
 }
 
-ul li a {
-    display: block;
-    padding: 15px 25px;
-    color: #FFF;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
-ul li ul.dropdown li {
-    display: block;
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-ul li ul.dropdown {
-    width: 100%;
-    background: #1b1b1b;
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffcc00;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 100%) {
+  .nav-links {
+    flex-direction: column;
+    background: #111;
     position: absolute;
+    top: 60px;
     display: none;
-}
+    width: 200px;
+    padding: 1rem;
+  }
 
-ul li a:hover {
-    background: #313131;
-}
-
-ul li:hover ul.dropdown {
-    display: block;
-}
-
-header{
-    background-image: url(img/nemet_zaszlo.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 3%;
-}
-
-body{
-    background-color: rgb(17, 17, 17);
-}
-
-#szoveg{
-    background-color: rgba(0, 0, 0, 0.8);
-    background-image: url(img/nemet_terkep.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: darken;
-    color: white;
-    padding: 3% 2%;
-}
-#quizzek{
+  .nav-links.show {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-image: url(img/nemet_zaszlo.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    background-blend-mode: darken;
-    padding: 10%;
-    flex-wrap: wrap;
-    gap: 5%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-#quiz1{
-    background-color: black;
-    color: white;
-    padding: 2% 2%;
-    border: 2px solid #313131;
+.card {
+  overflow: visible;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 1rem;               
+  flex-wrap: wrap;         
+  padding: 10rem 1rem;
 }
 
-#quiz2{
-    background-color: rgb(212, 0, 0);
-    color: rgb(0, 0, 0);
-    padding: 2% 2%;
-    border: 2px solid #830000;
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  margin-top: -100px; 
 }
 
-#quiz3{
-    background-color: rgb(230, 195, 0);
-    color: rgb(0, 0, 0);
-    padding: 2% 2%;
-    border: 2px solid #a38500;
+@media (max-width: 768px) {
+  .card-container {
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-top: -30px; 
+  }
 }
 
-button{
-    display: block;
-    margin: auto;
+#cardimg1{
+    width: 50%;
 }
 
-footer{
-    text-align: center;
-    color: white;
+#cardimg2{
+    width: 50%;
+}
+
+#cardimg3{
+    width: 50%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #545454ee;
+  border-radius: 5px;
+  
+}
+
+.front, .back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #ff0000, #ffd900,  transparent);
+  animation: rotation_481 4000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(img/nemet_terkep.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+}
+
+main > * {
+  position: relative;
+  z-index: 1; 
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 2rem;               
+  flex-wrap: wrap;         
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+.btn { 
+  font-size: 1.2rem;
+  margin: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #ffffff;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgb(247, 255, 6) 0%, rgb(255, 0, 0) 90%);
+  color: rgb(4, 4, 38);
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }

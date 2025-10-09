@@ -1,47 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Német quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathiász Napok</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header></header>
-    <nav>
-        <ul>
-            <li>
-                <a href="">szöveg</a>
-                <ul class="dropdown">
-                    <li><a href="#deutschland">Német</a></li>
-                    <li><a href="#Osterreich">Ausztria</a></li>
-                    <li><a href="#Schweiz">Svájc</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="">quiz</a>
-                <ul class="dropdown">
-                    <li><a href="#quiz1">Deutschland quiz</a></li>
-                    <li><a href="#quiz2">Österreich quiz</a></li>
-                    <li><a href="#quiz3">Schweiz quiz</a></li>
-                </ul>
-            </li>
-        </ul>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mathiász Napok</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="logo">Startseite</a></li>
+      </ul>
     </nav>
-    <main>
-        <section id="szoveg">
-           
-            
-            <h2 id="Schweiz">Schweiz</h2>
-            <img src="img/svajc_szoveg.jpg" alt="svájc">
-            <p>Die Schweiz ist ein föderalistischer, demokratischer Staat in Mitteleuropa. Er grenzt im Norden an Deutschland, im Osten an Österreich und Liechtenstein, im Süden an Italien und im Westen an Frankreich. In der Schweiz leben 8.962.258 Menschen  auf 41.291 Quadrat­kilometern. Der Staat hat Anteil an drei grossen Sprachräumen. Deutsch, Französisch, Italienisch und Rätoromanisch sind die offiziellen Landessprachen der Schweiz. Die Schweizerische Eidgenossenschaft ist ein Bundesstaat, der aus sechsundzwanzig teilsouveränen Kantonen besteht. Sitz der Regierung und des Parlaments ist die Bundesstadt Bern. Die Landesgrenze der Schweiz hat eine Länge von total 1935 Kilometern. Geologisch wird die Schweiz in fünf Hauptregionen eingeteilt. Die Schweiz versteht sich als aussenpolitisch neutral. Die Schweizer Küche verbindet Einflüsse aus der deutschen, französischen und italienischen Küche. Sie ist regional sehr unterschiedlich.<br><br></p>
-        </section>
-        <section id="quizzek">
-            
-            
-            
-        </section>
-    </main>
-    <footer><p>Készítők: Szaklajda Gergő, Takács Soma<br>Ügyfél: Márton Eszter</p></footer>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Willkommen bei den Mathiász-Tagen!</h1>
+      <p>Musik, Spaß und Gemeinschaft – das ist, was die Mathiász-Tage ausmacht.</p>
+    </section> 
+
+<div class="card-container">
+  <div class="card">
+    <div class="content">
+      <div class="back">
+        <div class="back-content">
+          <strong>Deutschland</strong>
+          <img src="img/favicon.png" alt="Deutschland" id="cardimg1">
+        </div>
+      </div>
+      <div class="front">
+        <div class="front-content">
+            <button class="btn">
+              <a href="nemet.html">Weiter</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="content">
+      <div class="back">
+        <div class="back-content">
+          <strong>Österreich</strong>
+          <img src="img/austriafavic.png" alt="austria" id="cardimg2">
+        </div>
+      </div>
+      <div class="front">
+        <div class="front-content">
+          <button class="btn">
+            <a href="ausztria.html">Weiter</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="content">
+      <div class="back">
+        <div class="back-content">
+          <strong>Schweiz</strong>
+          <img src="img/switzerlandfavic.png" alt="switzerland" id="cardimg3">
+        </div>
+      </div>
+      <div class="front">
+        <div class="front-content">
+          <button class="btn">
+            <a href="svajc.html">Weiter</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+  <footer>
+    <p>© 2025 Mathiász Napok | Minden jog fenntartva | Szaklajda Gergő - Takács Soma</p>
+  </footer>
 </body>
 </html>
