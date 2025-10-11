@@ -161,7 +161,6 @@ main > * {
   z-index: 1; 
 }
 
-/* Alap stílusok */
 
 header {
   background-color: #2a2a2a;
@@ -244,7 +243,6 @@ button.next {
   line-height: 1.6;
 }
 
-/* Quiz stílusok */
 section {
   max-width: 900px;
   margin: 20px auto;
