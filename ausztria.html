@@ -1,99 +1,140 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Österreich</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="img/austriafavic.png" type="image/x-icon">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Mathiász Napok</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="logo">Startseite</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Österreich</title>
+    <link rel="stylesheet" href="ausztria.css" />
+    <link rel="shortcut icon" href="img/austriafavic.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Mathiász Napok</div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="logo">Startseite</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="img/schweiz_szoveg.jpg" alt="Kép 1" />
+          <img src="img/schweiz_szoveg2.jpg" alt="Kép 2" />
+          <img src="img/schweiz_szoveg3.jpg" alt="Kép 3" />
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
 
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+      <section class="hero">
+        <h2 id="Osterreich">Österreich</h2>
+        <p>
+          Österreich ist ein mitteleuropäischer Binnenstaat mit über 9,2
+          Millionen Einwohnern. Die angrenzenden Staaten sind Deutschland und
+          Tschechien im Norden, die Slowakei und Ungarn im Osten, Slowenien und
+          Italien im Süden sowie die Schweiz und Liechtenstein im Westen. Seit
+          dem Jahre 1921 hat Österreich 9 Bundesländer: Vorarlberg, Tirol,
+          Salzburg, Kärnten, Steiermark, Oberösterreich, Niederösterreich, Wien
+          und das Burgenland. Das flächenmäßig größte Bundesland ist
+          Niederösterreich, das einwohnerreichste Bundesland ist Wien. Das
+          Bundesland Wien ist zugleich Bundeshauptstadt und auch
+          einwohnerstärkste Stadt des Landes. Der höchste Berg des Landes ist
+          der Großglockner. 43 % der Landesfläche sind bewaldet. Größere Banken
+          in Österreich sind die Erste Group Bank AG, Raiffeisen Bank
+          International AG, Unicredit Bank Austria sowie die BAWAG P.S.K.
+          Österreich verfügt über eine moderne und leistungsfähige Industrie.
+          Die österreichische Kultur ist vielschichtig geprägt; es gibt im Land
+          zahlreiche Kulturdenkmale und zwölf UNESCO-Welterbestätten.<br /><br />
+        </p>
+      </section>
+      <section>
+        <form name="ausztria">
+          <h4>1. Wo liegt Österreich?</h4>
+          <label for="a.Nordeuropa">a. in Nordeuropa</label>
+          <input
+            type="radio"
+            name="ausztria1"
+            id="a.Nordeuropa"
+            value="0"
+          /><br />
+          <label for="a.Mitteleuropa">b. in Mitteleuropa</label>
+          <input
+            type="radio"
+            name="ausztria1"
+            id="a.Mitteleuropa"
+            value="1"
+          /><br />
+          <label for="a.Sudeuropa">c. in Südeuropa</label>
+          <input
+            type="radio"
+            name="ausztria1"
+            id="a.Sudeuropa"
+            value="0"
+          /><br /><br />
 
-  <main>
-    <section class="hero">
-      <h2 id="Osterreich">Österreich</h2>
-      <p>Österreich  ist ein mitteleuropäischer Binnenstaat mit über 9,2 Millionen Einwohnern. Die angrenzenden Staaten sind Deutschland und Tschechien im Norden, die Slowakei und Ungarn im Osten, Slowenien und Italien im Süden sowie die Schweiz und Liechtenstein im Westen. Seit dem Jahre 1921 hat Österreich 9 Bundesländer: Vorarlberg, Tirol, Salzburg, Kärnten, Steiermark, Oberösterreich, Niederösterreich, Wien und das Burgenland. Das flächenmäßig größte Bundesland ist Niederösterreich, das einwohnerreichste Bundesland ist Wien. Das Bundesland Wien ist zugleich Bundeshauptstadt und auch einwohnerstärkste Stadt des Landes. Der höchste Berg des Landes ist der Großglockner. 43 % der Landesfläche sind bewaldet. Größere Banken in Österreich sind die Erste Group Bank AG, Raiffeisen Bank International AG, Unicredit Bank Austria sowie die BAWAG P.S.K. Österreich verfügt über eine moderne und leistungsfähige Industrie. Die österreichische Kultur ist vielschichtig geprägt; es gibt im Land zahlreiche Kulturdenkmale und zwölf UNESCO-Welterbestätten.<br><br></p>
-    </section>
-    <section>
-      <form name="ausztria">
-        <h4>1.	Wo liegt Österreich?</h4>
-        <label for="a.Nordeuropa">a.	in Nordeuropa</label>
-        <input type="radio" name="ausztria1" id="a.Nordeuropa" value="0"><br>
-        <label for="a.Mitteleuropa">b.	in Mitteleuropa</label>
-        <input type="radio" name="ausztria1" id="a.Mitteleuropa" value="1"><br>
-        <label for="a.Sudeuropa">c.	in Südeuropa</label>
-        <input type="radio" name="ausztria1" id="a.Sudeuropa" value="0"><br><br>
-
-        <label for="ausztria2">2.	Wie viele Grenzstaaten hat das Land? : </label>
-        <select name="ausztria2" id="ausztria2">
+          <label for="ausztria2"
+            >2. Wie viele Grenzstaaten hat das Land? :
+          </label>
+          <select name="ausztria2" id="ausztria2">
             <option value="0">8</option>
             <option value="0">9</option>
-            <option value="1">7</option>
-        </select><br><br>
+            <option value="1">7</option></select
+          ><br /><br />
 
-        <h4>3.	Wie viele Bundesländer hat Österreich?</h4>
-        <label for="a3.7">a.	7</label>
-        <input type="radio" name="ausztria3" id="a3.7" value="0"><br>
-        <label for="a3.8">b.	8</label>
-        <input type="radio" name="ausztria3" id="a3.8" value="0"><br>
-        <label for="a3.9">c.	9</label>
-        <input type="radio" name="ausztria3" id="a3.9" value="1"><br><br>
+          <h4>3. Wie viele Bundesländer hat Österreich?</h4>
+          <label for="a3.7">a. 7</label>
+          <input type="radio" name="ausztria3" id="a3.7" value="0" /><br />
+          <label for="a3.8">b. 8</label>
+          <input type="radio" name="ausztria3" id="a3.8" value="0" /><br />
+          <label for="a3.9">c. 9</label>
+          <input
+            type="radio"
+            name="ausztria3"
+            id="a3.9"
+            value="1"
+          /><br /><br />
 
-        <label for="ausztria4">4.	Welche Stadt ist die Hauptstadt? : </label>
-        <select name="ausztria4" id="ausztria4">
+          <label for="ausztria4">4. Welche Stadt ist die Hauptstadt? : </label>
+          <select name="ausztria4" id="ausztria4">
             <option value="0">Graz</option>
             <option value="1">Wien</option>
-            <option value="0">Innsbruck</option>
-        </select><br><br>
+            <option value="0">Innsbruck</option></select
+          ><br /><br />
 
-        <h4>5.	Wie heisst der höchste Berg?</h4>
-        <label for="Grossglockner">a.	Grossglockner</label>
-        <input type="radio" name="ausztria5" id="Grossglockner" value="1"><br>
-        <label for="Grosslockner">b.	Grosslockner</label>
-        <input type="radio" name="ausztria5" id="Grosslockner" value="0"><br>
-        <label for="Grossglokker">c.	Grossglokker</label>
-        <input type="radio" name="ausztria5" id="Grossglokker" value="0"><br><br>
+          <h4>5. Wie heisst der höchste Berg?</h4>
+          <label for="Grossglockner">a. Grossglockner</label>
+          <input
+            type="radio"
+            name="ausztria5"
+            id="Grossglockner"
+            value="1"
+          /><br />
+          <label for="Grosslockner">b. Grosslockner</label>
+          <input
+            type="radio"
+            name="ausztria5"
+            id="Grosslockner"
+            value="0"
+          /><br />
+          <label for="Grossglokker">c. Grossglokker</label>
+          <input
+            type="radio"
+            name="ausztria5"
+            id="Grossglokker"
+            value="0"
+          /><br /><br />
 
-        <p>Eredmény : </p>
-        <button type="button">Küldés</button>
-      </form>
-    </section>
-  </main>
+          <p id="eredmeny">Eredmény :</p>
+          <button type="button" id="kuldesgomb" onclick="ausztria_quiz()">Küldés</button>
+        </form>
+      </section>
+    </main>
 
+    <footer>
+      <p>© 2025 Mathiász Napok | Österreich | Szaklajda Gergő - Takács Soma</p>
+    </footer>
 
-
-  <footer>
-    <p>© 2025 Mathiász Napok | Austria | Szaklajda Gergő - Takács Soma</p>
-  </footer>
-</body>
+    <script src="java.js"></script>
+  </body>
 </html>
