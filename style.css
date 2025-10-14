@@ -160,7 +160,7 @@ footer {
   width: 160px;
   height: 160%;
   background: linear-gradient(90deg, transparent, #ff0000, #ffd900,  transparent);
-  animation: rotation_481 4000ms infinite linear;
+  animation: rotation_481 3000ms infinite linear;
 }
 
 .back-content {
