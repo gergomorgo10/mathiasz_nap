@@ -3,7 +3,10 @@ const prevBtn = document.querySelector('.prev');
     const images = document.querySelector('.carousel-images');
     let index = 0;
     let kiir = document.getElementById("eredmeny");
+    let dicseretkiir = document.getElementById("dicseret")
     const totalImages = document.querySelectorAll('.carousel-images img').length;
+    const dicseret = ["Du warst gut" , "schöne Arbeit", "weiter so mit der guten Arbeit"]
+    
 
     function moveToNext() {
         index = (index + 1) % totalImages;
@@ -18,13 +21,21 @@ const prevBtn = document.querySelector('.prev');
     nextBtn.addEventListener('click', moveToNext);
     prevBtn.addEventListener('click', moveToPrev);
 
+    function getRandomItem(dicseret) {
+    const index = Math.floor(Math.random() * dicseret.length);
+    return dicseret[index];
+   }
+
     function ausztria_quiz(){
        let elso = document.querySelector('input[name="ausztria1"]:checked').value|0;
        let masodik = document.getElementById("ausztria2").value|0;
        let harmadik = document.querySelector('input[name="ausztria3"]:checked').value|0;
        let negyedik = document.getElementById("ausztria4").value|0;
        let otodik = document.querySelector('input[name="ausztria5"]:checked').value|0;
-       kiir.innerHTML = `Eredmény : 5/${elso + masodik + harmadik + negyedik + otodik}`
+       let otkerdes = elso + masodik + harmadik + negyedik + otodik;
+       if(otkerdes >= 4)
+         dicseretkiir.innerHTML = `${getRandomItem(dicseret)}`
+       kiir.innerHTML = `Eredmény : 5/${otkerdes}`
     }
 
     function svajc_quiz(){
@@ -33,7 +44,10 @@ const prevBtn = document.querySelector('.prev');
        let harmadik = document.querySelector('input[name="svájc3"]:checked').value|0;
        let negyedik = document.getElementById("svájc4").value|0;
        let otodik = document.querySelector('input[name="svájc5"]:checked').value|0;
-       kiir.innerHTML = `Eredmény : 5/${elso + masodik + harmadik + negyedik + otodik}`
+       let otkerdes = elso + masodik + harmadik + negyedik + otodik;
+       if(otkerdes >= 4)
+         dicseretkiir.innerHTML = `${getRandomItem(dicseret)}`
+       kiir.innerHTML = `Eredmény : 5/${otkerdes}`
     }
 
     function nemet_quiz(){
@@ -47,5 +61,8 @@ const prevBtn = document.querySelector('.prev');
        let nyolcadik = document.getElementById("nemet8").value|0;
        let kilencedik = document.querySelector('input[name="nemet9"]:checked').value|0;
        let tizedik = document.getElementById("nemet10").value|0;
-       kiir.innerHTML = `Eredmény : 10/${elso + masodik + harmadik + negyedik + otodik + hatodik + hetedik + nyolcadik + kilencedik + tizedik}`
+       let tizkerdes = elso + masodik + harmadik + negyedik + otodik + hatodik + hetedik + nyolcadik + kilencedik + tizedik;
+       if(tizkerdes >= 8)
+         dicseretkiir.innerHTML = `${getRandomItem(dicseret)}`
+       kiir.innerHTML = `Eredmény : 10/${tizkerdes}`
     }
